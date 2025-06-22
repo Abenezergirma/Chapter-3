@@ -139,9 +139,4 @@ python prediction/predict_pinn_voltage.py
   PYTHONPATH=. python prediction/predict_neural_ode_voltage.py
   ```
 
----
 
-## 👨‍💻 Author
-
-Abenezer Taye | 2025  
-Data-Driven Battery Modeling for Aerial Vehicle Mission Risk Assessment
