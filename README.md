@@ -1,10 +1,10 @@
-# 🔋 Data-Driven Battery Modeling with Neural ODE and PINN
+# Data-Driven Battery Modeling with Neural ODE and PINN
 
 This project implements two data-driven modeling approaches—**Neural ODE** and **Physics-Informed Neural Networks (PINN)**—to predict the voltage response of a Tarot T18 drone battery given a current or power profile. The project integrates physics-based constraints and benchmarking with an electrochemical battery model.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 data_driven_battery_modeling/
@@ -39,12 +39,12 @@ data_driven_battery_modeling/
 │   └── pinn_model_best.pth
 │
 ├── README.md
-└── requirements.txt (optional)
+└── requirements.txt 
 ```
 
 ---
 
-## 🧠 Models
+## Models
 
 ### 1. Neural ODE
 - **Training**: `training/train_neural_ode.py`
@@ -58,7 +58,7 @@ data_driven_battery_modeling/
 
 ---
 
-## ⚙️ Dataset Generation
+## Dataset Generation
 
 - **Script**: `scripts/generate_dataset.py`
 - **Output**: 
@@ -69,7 +69,7 @@ Includes full-flight and mid-flight current profiles simulated with the physics-
 
 ---
 
-## ⚡ Power Profile Preprocessing
+## Power Profile Preprocessing
 
 - **Script**: `scripts/preprocess_power_profile.py`
 - Converts power profiles (from .mat files) to current profiles using a simplified Rint battery model.
@@ -77,7 +77,7 @@ Includes full-flight and mid-flight current profiles simulated with the physics-
 
 ---
 
-## 📊 Prediction Comparison
+## Prediction Comparison
 
 Each prediction script (Neural ODE and PINN) compares the predicted battery voltage against the simulated ground truth using the electrochemical battery model.
 
@@ -88,9 +88,9 @@ Outputs include:
 
 ---
 
-## 🧪 How to Run (from project root)
+## How to Run (from project root)
 
-> ⚠️ Important: You must add the project root to `PYTHONPATH` or do it manually in the script via `sys.path`.
+> Important: You must add the project root to `PYTHONPATH` or do it manually in the script via `sys.path`.
 
 ### Generate Training Dataset
 ```bash
@@ -124,7 +124,7 @@ python prediction/predict_pinn_voltage.py
 
 ---
 
-## 📌 Notes
+## Notes
 
 - The reference power profile `EnergyReq.mat` must be placed in the project root or data folder.
 - All voltage predictions are normalized during training and denormalized for evaluation using min/max values computed from training data.
@@ -132,7 +132,7 @@ python prediction/predict_pinn_voltage.py
 
 ---
 
-## 🔧 Troubleshooting
+## Troubleshooting
 
 - If you see `ModuleNotFoundError`, make sure to add the project root to `sys.path` in your scripts or launch scripts with:
   ```bash
