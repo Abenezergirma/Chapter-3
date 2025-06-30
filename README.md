@@ -4,7 +4,7 @@ This project implements two data-driven modeling approaches—**Neural ODE** and
 
 
 <p align="center">
-  <img src="https://github.com/Abenezergirma/Chapter-3/blob/main/framework.png" width="500"/>
+  <img src="https://github.com/Abenezergirma/Chapter-3/blob/main/framework.png" width="600"/>
 </p>
 
 ---
