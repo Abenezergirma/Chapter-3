@@ -2,6 +2,11 @@
 
 This project implements two data-driven modeling approaches—**Neural ODE** and **Physics-Informed Neural Networks (PINN)**—to predict the voltage response of a Tarot T18 drone battery given a current or power profile. The project integrates physics-based constraints and benchmarking with an electrochemical battery model.
 
+
+<p align="center">
+  <img src="https://github.com/Abenezergirma/Chapter-3/blob/main/framework.png" width="500"/>
+</p>
+
 ---
 
 ## Project Structure
